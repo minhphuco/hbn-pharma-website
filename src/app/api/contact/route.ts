@@ -1,10 +1,7 @@
 import {NextRequest, NextResponse} from 'next/server'
 import {Resend} from 'resend'
 
-// Cần cài: npm install resend
-// Set env: RESEND_API_KEY và CONTACT_EMAIL
-
-const resend = new Resend(process.env.RESEND_API_KEY)
+export const dynamic = 'force-dynamic'
 
 export async function POST(request: NextRequest) {
   try {
@@ -15,10 +12,17 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({error: 'Missing required fields'}, {status: 400})
     }
 
+    const apiKey = process.env.RESEND_API_KEY
+    if (!apiKey) {
+      console.warn('RESEND_API_KEY not configured. Contact submission received for:', email)
+      return NextResponse.json({success: true, notice: 'Received (email notification pending setup)'})
+    }
+
+    const resend = new Resend(apiKey)
     const {error} = await resend.emails.send({
       from: 'noreply@hbnpharma.com.vn',
       to: [process.env.CONTACT_EMAIL || 'info@hbnpharma.com.vn'],
-      replyTo: email,
+      reply_to: email,
       subject: subject ? `[HBN Web] ${subject}` : `[HBN Web] Liên hệ từ ${name}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
