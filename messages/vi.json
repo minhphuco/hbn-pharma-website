@@ -1,0 +1,75 @@
+{
+  "nav": {
+    "home": "Trang chủ",
+    "about": "Giới thiệu",
+    "products": "Sản phẩm",
+    "news": "Tin tức",
+    "certificates": "Chứng nhận",
+    "partners": "Đối tác",
+    "contact": "Liên hệ"
+  },
+  "hero": {
+    "tagline": "Together for long life",
+    "title": "Vì Sức Khỏe Cộng Đồng Việt Nam",
+    "subtitle": "Công ty Cổ Phần Dược Phẩm Hiệp Bách Niên - Hơn 20 năm nghiên cứu, sản xuất và phân phối dược phẩm chất lượng cao.",
+    "cta_primary": "Xem Sản Phẩm",
+    "cta_secondary": "Tìm Hiểu Về Chúng Tôi"
+  },
+  "home": {
+    "featured_products": "Sản Phẩm Nổi Bật",
+    "featured_products_desc": "Các sản phẩm dược phẩm chất lượng cao được nghiên cứu và sản xuất theo tiêu chuẩn quốc tế",
+    "view_all": "Xem tất cả",
+    "about_section_title": "Về Hiệp Bách Niên",
+    "about_section_desc": "Với sứ mệnh nâng cao sức khỏe cộng đồng, HBN Pharma không ngừng nghiên cứu và phát triển các giải pháp y tế tiên tiến.",
+    "stats_years": "Năm kinh nghiệm",
+    "stats_products": "Sản phẩm",
+    "stats_partners": "Đối tác",
+    "stats_provinces": "Tỉnh thành",
+    "partners_title": "Đối Tác Tin Cậy",
+    "news_title": "Tin Tức & Sự Kiện"
+  },
+  "footer": {
+    "company_name": "Công ty Cổ Phần Dược Phẩm Hiệp Bách Niên",
+    "address_hcm": "Địa chỉ TP.HCM",
+    "address_hn": "Địa chỉ Hà Nội",
+    "quick_links": "Liên Kết Nhanh",
+    "contact_info": "Thông Tin Liên Hệ",
+    "follow_us": "Theo Dõi Chúng Tôi",
+    "copyright": "© 2024 Công ty Cổ Phần Dược Phẩm Hiệp Bách Niên. Bảo lưu mọi quyền.",
+    "hotline": "Hotline"
+  },
+  "contact": {
+    "title": "Liên Hệ Với Chúng Tôi",
+    "subtitle": "Chúng tôi luôn sẵn sàng lắng nghe và hỗ trợ bạn",
+    "name": "Họ và Tên",
+    "email": "Email",
+    "phone": "Số Điện Thoại",
+    "subject": "Chủ Đề",
+    "message": "Nội Dung",
+    "send": "Gửi Tin Nhắn",
+    "sending": "Đang gửi...",
+    "success": "Tin nhắn của bạn đã được gửi thành công!",
+    "error": "Có lỗi xảy ra, vui lòng thử lại.",
+    "office_hcm": "Văn Phòng TP.HCM",
+    "office_hn": "Văn Phòng Hà Nội"
+  },
+  "products": {
+    "title": "Sản Phẩm",
+    "subtitle": "Danh mục sản phẩm dược phẩm chất lượng cao",
+    "categories": {
+      "otc": "Thuốc OTC",
+      "etc": "Thuốc ETC",
+      "medical_device": "Thiết Bị Y Tế",
+      "functional_food": "Thực Phẩm Chức Năng"
+    },
+    "search_placeholder": "Tìm kiếm sản phẩm...",
+    "view_detail": "Xem Chi Tiết"
+  },
+  "about": {
+    "title": "Về Chúng Tôi",
+    "history_title": "Lịch Sử Hình Thành",
+    "mission_title": "Sứ Mệnh & Tầm Nhìn",
+    "values_title": "Giá Trị Cốt Lõi",
+    "team_title": "Đội Ngũ Lãnh Đạo"
+  }
+}

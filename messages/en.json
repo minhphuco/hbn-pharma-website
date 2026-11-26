@@ -1,0 +1,75 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "news": "News",
+    "certificates": "Certificates",
+    "partners": "Partners",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "Together for long life",
+    "title": "For the Health of Vietnamese Community",
+    "subtitle": "Hiep Bach Nien Pharmaceutical Joint Stock Company - Over 20 years of research, manufacturing and distribution of high-quality pharmaceuticals.",
+    "cta_primary": "View Products",
+    "cta_secondary": "Learn About Us"
+  },
+  "home": {
+    "featured_products": "Featured Products",
+    "featured_products_desc": "High-quality pharmaceutical products researched and manufactured to international standards",
+    "view_all": "View all",
+    "about_section_title": "About Hiep Bach Nien",
+    "about_section_desc": "With a mission to improve community health, HBN Pharma continuously researches and develops advanced medical solutions.",
+    "stats_years": "Years of experience",
+    "stats_products": "Products",
+    "stats_partners": "Partners",
+    "stats_provinces": "Provinces",
+    "partners_title": "Trusted Partners",
+    "news_title": "News & Events"
+  },
+  "footer": {
+    "company_name": "Hiep Bach Nien Pharmaceutical Joint Stock Company",
+    "address_hcm": "Ho Chi Minh City Address",
+    "address_hn": "Hanoi Address",
+    "quick_links": "Quick Links",
+    "contact_info": "Contact Information",
+    "follow_us": "Follow Us",
+    "copyright": "© 2024 Hiep Bach Nien Pharmaceutical Joint Stock Company. All rights reserved.",
+    "hotline": "Hotline"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We are always ready to listen and support you",
+    "name": "Full Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Your message has been sent successfully!",
+    "error": "An error occurred, please try again.",
+    "office_hcm": "Ho Chi Minh City Office",
+    "office_hn": "Hanoi Office"
+  },
+  "products": {
+    "title": "Products",
+    "subtitle": "High-quality pharmaceutical product catalog",
+    "categories": {
+      "otc": "OTC Drugs",
+      "etc": "ETC Drugs",
+      "medical_device": "Medical Devices",
+      "functional_food": "Functional Food"
+    },
+    "search_placeholder": "Search products...",
+    "view_detail": "View Detail"
+  },
+  "about": {
+    "title": "About Us",
+    "history_title": "History",
+    "mission_title": "Mission & Vision",
+    "values_title": "Core Values",
+    "team_title": "Leadership Team"
+  }
+}

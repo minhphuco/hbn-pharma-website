@@ -1,0 +1,275 @@
+{
+  "_meta": {
+    "project": "HBN Pharma Website Redesign",
+    "client": "Cong ty Co Phan Duoc Pham Hiep Bach Nien",
+    "designer": "Nguyen Khanh Linh - Lead UI/UX, TechNova Studio",
+    "created": "2026-11-22",
+    "version": "1.0.0",
+    "note": "Color palette: Primary Forest Green + White. No orange/red accent per client confirmation."
+  },
+
+  "color": {
+    "primary": {
+      "50":  { "value": "#F0F7F0", "description": "Lightest green - backgrounds, hover states" },
+      "100": { "value": "#D6EDD8", "description": "Very light green - subtle backgrounds" },
+      "200": { "value": "#AEDBB2", "description": "Light green - disabled states, borders" },
+      "300": { "value": "#7EC483", "description": "Medium light green - secondary buttons hover" },
+      "400": { "value": "#52AA59", "description": "Medium green - icons, tags" },
+      "500": { "value": "#2E8B34", "description": "Main brand green - CTA buttons, links" },
+      "600": { "value": "#257A2C", "description": "Dark green - button hover, headings" },
+      "700": { "value": "#1C6522", "description": "Darker green - active states" },
+      "800": { "value": "#154E1A", "description": "Very dark green - footer, navbar bg option" },
+      "900": { "value": "#0D3511", "description": "Deepest green - maximum contrast text on light bg" }
+    },
+    "neutral": {
+      "white":  { "value": "#FFFFFF", "description": "Pure white - primary background" },
+      "50":     { "value": "#F9FAFB", "description": "Off-white - section alternate backgrounds" },
+      "100":    { "value": "#F3F4F6", "description": "Light gray - card backgrounds, dividers" },
+      "200":    { "value": "#E5E7EB", "description": "Border gray - input borders, card borders" },
+      "300":    { "value": "#D1D5DB", "description": "Medium border gray - disabled borders" },
+      "400":    { "value": "#9CA3AF", "description": "Placeholder gray - placeholder text" },
+      "500":    { "value": "#6B7280", "description": "Muted text - subtitles, captions" },
+      "600":    { "value": "#4B5563", "description": "Secondary text - body text secondary" },
+      "700":    { "value": "#374151", "description": "Main body text" },
+      "800":    { "value": "#1F2937", "description": "Headings - H2, H3" },
+      "900":    { "value": "#111827", "description": "Strongest text - H1, hero headline" }
+    },
+    "semantic": {
+      "background": {
+        "default":   { "value": "#FFFFFF", "description": "Main page background" },
+        "subtle":    { "value": "#F9FAFB", "description": "Alternate section background" },
+        "section":   { "value": "#F0F7F0", "description": "Green-tinted section (e.g. About, CTA)" },
+        "overlay":   { "value": "rgba(0,0,0,0.5)", "description": "Modal/drawer overlay" }
+      },
+      "text": {
+        "primary":     { "value": "#111827", "description": "Main headings" },
+        "secondary":   { "value": "#374151", "description": "Body paragraphs" },
+        "muted":       { "value": "#6B7280", "description": "Captions, labels, metadata" },
+        "disabled":    { "value": "#9CA3AF", "description": "Disabled inputs, placeholders" },
+        "inverse":     { "value": "#FFFFFF", "description": "Text on dark/green backgrounds" },
+        "link":        { "value": "#2E8B34", "description": "Hyperlinks" },
+        "linkHover":   { "value": "#1C6522", "description": "Hyperlink hover" }
+      },
+      "border": {
+        "default":  { "value": "#E5E7EB", "description": "Default borders" },
+        "strong":   { "value": "#D1D5DB", "description": "Emphasized borders" },
+        "brand":    { "value": "#2E8B34", "description": "Focused inputs, active tabs" }
+      },
+      "status": {
+        "success": { "value": "#16A34A", "description": "Success messages - green family" },
+        "info":    { "value": "#0369A1", "description": "Info banners - blue" },
+        "warning": { "value": "#CA8A04", "description": "Warnings - amber" },
+        "error":   { "value": "#DC2626", "description": "Errors, required fields" }
+      }
+    }
+  },
+
+  "typography": {
+    "fontFamily": {
+      "heading": {
+        "value": "'Be Vietnam Pro', 'Plus Jakarta Sans', sans-serif",
+        "description": "Headings - supports Vietnamese diacritics well, modern feel"
+      },
+      "body": {
+        "value": "'Inter', 'Be Vietnam Pro', sans-serif",
+        "description": "Body text - highly readable at small sizes, multilingual"
+      },
+      "mono": {
+        "value": "'JetBrains Mono', 'Courier New', monospace",
+        "description": "Code blocks, tracking numbers"
+      }
+    },
+    "fontSize": {
+      "xs":   { "value": "0.75rem",  "px": "12px", "lineHeight": "1rem" },
+      "sm":   { "value": "0.875rem", "px": "14px", "lineHeight": "1.25rem" },
+      "base": { "value": "1rem",     "px": "16px", "lineHeight": "1.5rem" },
+      "lg":   { "value": "1.125rem", "px": "18px", "lineHeight": "1.75rem" },
+      "xl":   { "value": "1.25rem",  "px": "20px", "lineHeight": "1.75rem" },
+      "2xl":  { "value": "1.5rem",   "px": "24px", "lineHeight": "2rem" },
+      "3xl":  { "value": "1.875rem", "px": "30px", "lineHeight": "2.25rem" },
+      "4xl":  { "value": "2.25rem",  "px": "36px", "lineHeight": "2.5rem" },
+      "5xl":  { "value": "3rem",     "px": "48px", "lineHeight": "1" },
+      "6xl":  { "value": "3.75rem",  "px": "60px", "lineHeight": "1" }
+    },
+    "fontWeight": {
+      "regular":   { "value": "400" },
+      "medium":    { "value": "500" },
+      "semibold":  { "value": "600" },
+      "bold":      { "value": "700" },
+      "extrabold": { "value": "800" }
+    },
+    "letterSpacing": {
+      "tight":   { "value": "-0.025em" },
+      "normal":  { "value": "0em" },
+      "wide":    { "value": "0.025em" },
+      "wider":   { "value": "0.05em" },
+      "widest":  { "value": "0.1em" }
+    },
+    "typescale": {
+      "h1": { "fontSize": "4xl", "fontWeight": "bold",     "fontFamily": "heading", "letterSpacing": "tight" },
+      "h2": { "fontSize": "3xl", "fontWeight": "bold",     "fontFamily": "heading", "letterSpacing": "tight" },
+      "h3": { "fontSize": "2xl", "fontWeight": "semibold", "fontFamily": "heading" },
+      "h4": { "fontSize": "xl",  "fontWeight": "semibold", "fontFamily": "heading" },
+      "h5": { "fontSize": "lg",  "fontWeight": "semibold", "fontFamily": "heading" },
+      "h6": { "fontSize": "base","fontWeight": "semibold", "fontFamily": "heading" },
+      "bodyLarge":  { "fontSize": "lg",   "fontWeight": "regular", "fontFamily": "body" },
+      "body":       { "fontSize": "base", "fontWeight": "regular", "fontFamily": "body" },
+      "bodySmall":  { "fontSize": "sm",   "fontWeight": "regular", "fontFamily": "body" },
+      "label":      { "fontSize": "sm",   "fontWeight": "medium",  "fontFamily": "body" },
+      "caption":    { "fontSize": "xs",   "fontWeight": "regular", "fontFamily": "body" },
+      "overline":   { "fontSize": "xs",   "fontWeight": "semibold","fontFamily": "body", "letterSpacing": "widest" }
+    }
+  },
+
+  "spacing": {
+    "0":   { "value": "0px" },
+    "1":   { "value": "4px" },
+    "2":   { "value": "8px" },
+    "3":   { "value": "12px" },
+    "4":   { "value": "16px" },
+    "5":   { "value": "20px" },
+    "6":   { "value": "24px" },
+    "8":   { "value": "32px" },
+    "10":  { "value": "40px" },
+    "12":  { "value": "48px" },
+    "16":  { "value": "64px" },
+    "20":  { "value": "80px" },
+    "24":  { "value": "96px" },
+    "32":  { "value": "128px" }
+  },
+
+  "borderRadius": {
+    "none":  { "value": "0px" },
+    "sm":    { "value": "4px",  "description": "Subtle - small badges, tags" },
+    "base":  { "value": "8px",  "description": "Default - buttons, inputs" },
+    "md":    { "value": "12px", "description": "Cards, dropdowns" },
+    "lg":    { "value": "16px", "description": "Large cards, modals" },
+    "xl":    { "value": "24px", "description": "Hero sections, featured areas" },
+    "2xl":   { "value": "32px", "description": "Extra rounded - banner sections" },
+    "full":  { "value": "9999px", "description": "Pills, avatars, chips" }
+  },
+
+  "shadow": {
+    "none":  { "value": "none" },
+    "xs":    { "value": "0 1px 2px rgba(0,0,0,0.05)" },
+    "sm":    { "value": "0 1px 3px rgba(0,0,0,0.10), 0 1px 2px rgba(0,0,0,0.06)" },
+    "base":  { "value": "0 4px 6px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.06)" },
+    "md":    { "value": "0 10px 15px rgba(0,0,0,0.10), 0 4px 6px rgba(0,0,0,0.05)" },
+    "lg":    { "value": "0 20px 25px rgba(0,0,0,0.10), 0 10px 10px rgba(0,0,0,0.04)" },
+    "xl":    { "value": "0 25px 50px rgba(0,0,0,0.12)" },
+    "green": { "value": "0 4px 14px rgba(46,139,52,0.25)", "description": "Brand green glow - CTA buttons" }
+  },
+
+  "layout": {
+    "containerMaxWidth": { "value": "1280px" },
+    "containerPadding": {
+      "mobile":  { "value": "16px" },
+      "tablet":  { "value": "32px" },
+      "desktop": { "value": "48px" }
+    },
+    "breakpoints": {
+      "sm":  { "value": "640px" },
+      "md":  { "value": "768px" },
+      "lg":  { "value": "1024px" },
+      "xl":  { "value": "1280px" },
+      "2xl": { "value": "1536px" }
+    }
+  },
+
+  "animation": {
+    "duration": {
+      "fast":    { "value": "150ms" },
+      "base":    { "value": "250ms" },
+      "slow":    { "value": "400ms" },
+      "slower":  { "value": "600ms" }
+    },
+    "easing": {
+      "default":   { "value": "cubic-bezier(0.4, 0, 0.2, 1)" },
+      "in":        { "value": "cubic-bezier(0.4, 0, 1, 1)" },
+      "out":       { "value": "cubic-bezier(0, 0, 0.2, 1)" },
+      "inOut":     { "value": "cubic-bezier(0.4, 0, 0.6, 1)" }
+    }
+  },
+
+  "component": {
+    "button": {
+      "primary": {
+        "background":    "#2E8B34",
+        "backgroundHover": "#1C6522",
+        "text":          "#FFFFFF",
+        "borderRadius":  "8px",
+        "paddingX":      "24px",
+        "paddingY":      "12px",
+        "shadow":        "0 4px 14px rgba(46,139,52,0.25)",
+        "fontWeight":    "600",
+        "fontSize":      "base"
+      },
+      "secondary": {
+        "background":    "transparent",
+        "border":        "2px solid #2E8B34",
+        "text":          "#2E8B34",
+        "backgroundHover": "#F0F7F0",
+        "borderRadius":  "8px",
+        "paddingX":      "24px",
+        "paddingY":      "10px"
+      },
+      "ghost": {
+        "background":    "transparent",
+        "text":          "#2E8B34",
+        "backgroundHover": "#F0F7F0",
+        "borderRadius":  "8px"
+      }
+    },
+    "navbar": {
+      "background":        "#FFFFFF",
+      "backgroundScrolled": "#FFFFFF",
+      "borderBottom":      "1px solid #E5E7EB",
+      "logoColor":         "#2E8B34",
+      "linkColor":         "#374151",
+      "linkColorActive":   "#2E8B34",
+      "linkColorHover":    "#2E8B34",
+      "height":            "72px",
+      "shadow":            "0 1px 3px rgba(0,0,0,0.08)"
+    },
+    "footer": {
+      "background":    "#154E1A",
+      "textColor":     "#D6EDD8",
+      "headingColor":  "#FFFFFF",
+      "linkColor":     "#AEDBB2",
+      "linkColorHover":"#FFFFFF",
+      "borderTop":     "1px solid #1C6522"
+    },
+    "card": {
+      "background":    "#FFFFFF",
+      "border":        "1px solid #E5E7EB",
+      "borderRadius":  "12px",
+      "shadow":        "0 4px 6px rgba(0,0,0,0.07)",
+      "shadowHover":   "0 10px 15px rgba(0,0,0,0.10)",
+      "paddingX":      "24px",
+      "paddingY":      "24px"
+    },
+    "input": {
+      "background":        "#FFFFFF",
+      "border":            "1px solid #D1D5DB",
+      "borderFocus":       "2px solid #2E8B34",
+      "borderRadius":      "8px",
+      "textColor":         "#374151",
+      "placeholderColor":  "#9CA3AF",
+      "paddingX":          "16px",
+      "paddingY":          "10px"
+    },
+    "badge": {
+      "primary": {
+        "background": "#D6EDD8",
+        "text":       "#1C6522",
+        "borderRadius": "9999px"
+      }
+    },
+    "section": {
+      "paddingY": {
+        "default": "80px",
+        "mobile":  "48px"
+      }
+    }
+  }
+}
