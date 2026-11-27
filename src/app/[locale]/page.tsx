@@ -1,5 +1,3 @@
-import Navbar from '@/components/layout/Navbar'
-import Footer from '@/components/layout/Footer'
 import {useTranslations} from 'next-intl'
 import {Link} from '@/navigation'
 
@@ -297,16 +295,12 @@ function PartnersSection() {
 // ---- Page Assembly ----
 export default function HomePage() {
   return (
-    <>
-      <Navbar />
-      <main>
-        <HeroSection />
-        <StatsSection />
-        <FeaturedProductsSection />
-        <AboutSnippetSection />
-        <PartnersSection />
-      </main>
-      <Footer />
-    </>
+    <main>
+      <HeroSection />
+      <StatsSection />
+      <FeaturedProductsSection />
+      <AboutSnippetSection />
+      <PartnersSection />
+    </main>
   )
 }

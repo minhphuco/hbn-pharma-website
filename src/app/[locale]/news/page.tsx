@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import {Link} from '@/navigation';
 
 const POSTS = [
   { id: 1, slug: 'vitamin-c-va-suc-de-khang', title: 'Vitamin C và vai trò tăng cường sức đề kháng', excerpt: 'Tìm hiểu tại sao Vitamin C là vi chất thiết yếu trong mùa cúm và cách bổ sung đúng liều lượng.', date: '2026-11-10', category: 'Sức khỏe', readTime: '4 phút' },
@@ -65,13 +65,13 @@ export default function NewsPage() {
                     <span className="text-neutral-400 text-xs">{post.readTime} đọc</span>
                   </div>
                   <h2 className="font-bold text-neutral-900 mb-2 leading-snug hover:text-primary-600 transition-colors">
-                    <Link href={`/tin-tuc/${post.slug}`}>{post.title}</Link>
+                    <Link href="/news">{post.title}</Link>
                   </h2>
                   <p className="text-neutral-500 text-sm mb-4 leading-relaxed line-clamp-2">{post.excerpt}</p>
                   <div className="flex items-center justify-between">
                     <span className="text-neutral-400 text-xs">{post.date}</span>
                     <Link
-                      href={`/tin-tuc/${post.slug}`}
+                      href="/news"
                       className="text-primary-600 hover:text-primary-700 text-sm font-medium"
                     >
                       Đọc tiếp &rarr;

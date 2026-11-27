@@ -12,7 +12,7 @@ export default function LanguageSwitcher() {
 
   const switchLocale = (nextLocale: 'vi' | 'en') => {
     startTransition(() => {
-      router.replace(pathname, {locale: nextLocale})
+      router.replace(pathname as any, {locale: nextLocale})
     })
   }
 

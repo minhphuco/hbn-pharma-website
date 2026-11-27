@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import {Link} from '@/navigation';
 import { notFound } from 'next/navigation';
 
 // Placeholder data - sẽ được thay bằng Sanity CMS query sau
@@ -15,8 +15,9 @@ const PRODUCTS: Record<string, { name: string; category: string; desc: string; f
   },
 };
 
-export default function ProductDetailPage({ params }: { params: { id: string } }) {
-  const product = PRODUCTS[params.id];
+export default async function ProductDetailPage({ params }: { params: { id: string } | Promise<{ id: string }> }) {
+  const resolvedParams = await params;
+  const product = PRODUCTS[resolvedParams.id];
 
   if (!product) {
     notFound();
@@ -29,7 +30,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
         <nav className="text-sm text-neutral-500 mb-8">
           <Link href="/" className="hover:text-primary-600">Trang chủ</Link>
           <span className="mx-2">/</span>
-          <Link href="/san-pham" className="hover:text-primary-600">Sản phẩm</Link>
+          <Link href="/products" className="hover:text-primary-600">Sản phẩm</Link>
           <span className="mx-2">/</span>
           <span className="text-neutral-900">{product.name}</span>
         </nav>
@@ -64,13 +65,13 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
 
             <div className="mt-8 flex gap-4">
               <Link
-                href="/lien-he"
+                href="/contact"
                 className="bg-primary-500 hover:bg-primary-600 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
               >
                 Liên hệ đặt hàng
               </Link>
               <Link
-                href="/san-pham"
+                href="/products"
                 className="border border-neutral-300 hover:border-primary-500 text-neutral-700 hover:text-primary-700 font-medium px-6 py-3 rounded-xl transition-colors"
               >
                 Xem thêm sản phẩm

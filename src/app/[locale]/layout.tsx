@@ -1,8 +1,10 @@
 import {NextIntlClientProvider} from 'next-intl'
-import {getMessages, getLocale} from 'next-intl/server'
+import {getMessages} from 'next-intl/server'
 import {notFound} from 'next/navigation'
 import {routing} from '@/routing'
 import type { Metadata } from 'next'
+import Navbar from '@/components/layout/Navbar'
+import Footer from '@/components/layout/Footer'
 import '../globals.css'
 
 export const metadata: Metadata = {
@@ -46,9 +48,13 @@ export default async function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="font-body bg-neutral-white text-neutral-700 antialiased">
+      <body className="font-body bg-neutral-white text-neutral-700 antialiased flex flex-col min-h-screen">
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <Navbar />
+          <div className="flex-grow">
+            {children}
+          </div>
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

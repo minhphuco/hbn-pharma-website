@@ -1,8 +1,6 @@
 'use client'
 
 import {useTranslations} from 'next-intl'
-import Navbar from '@/components/layout/Navbar'
-import Footer from '@/components/layout/Footer'
 import {useForm} from 'react-hook-form'
 import {useState} from 'react'
 
@@ -186,12 +184,8 @@ function ContactFormSection() {
 
 export default function ContactPage() {
   return (
-    <>
-      <Navbar />
-      <main className="pt-20">
-        <ContactFormSection />
-      </main>
-      <Footer />
-    </>
+    <main className="pt-20">
+      <ContactFormSection />
+    </main>
   )
 }

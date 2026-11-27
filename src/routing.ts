@@ -13,6 +13,10 @@ export const routing = defineRouting({
       vi: '/san-pham',
       en: '/products',
     },
+    '/products/[id]': {
+      vi: '/san-pham/[id]',
+      en: '/products/[id]',
+    },
     '/news': {
       vi: '/tin-tuc',
       en: '/news',

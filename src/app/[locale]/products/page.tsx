@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
+import {Link} from '@/navigation';
 
 const CATEGORIES = [
   { id: 'all', vi: 'Tất cả', en: 'All' },
@@ -103,7 +103,7 @@ export default function ProductsPage() {
                     </h3>
                     <p className="text-neutral-500 text-sm mb-3 leading-relaxed">{product.desc}</p>
                     <Link
-                      href={`/san-pham/${product.id}`}
+                      href={{pathname: '/products/[id]', params: {id: String(product.id)}}}
                       className="inline-block w-full text-center bg-primary-500 hover:bg-primary-600 text-white text-sm font-medium py-2 rounded-lg transition-colors"
                     >
                       Xem chi tiết
@@ -124,7 +124,7 @@ export default function ProductsPage() {
             Chúng tôi đang tìm kiếm các đối tác phân phối trên toàn quốc. Liên hệ ngay để biết thêm thông tin ưu đãi.
           </p>
           <Link
-            href="/lien-he"
+            href="/contact"
             className="inline-block bg-white text-primary-700 hover:bg-primary-50 font-semibold px-8 py-3 rounded-xl transition-colors"
           >
             Liên hệ ngay
