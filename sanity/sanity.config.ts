@@ -7,6 +7,7 @@ import {
   teamMemberSchema,
   partnerSchema,
   certificationSchema,
+  siteSettingsSchema,
 } from './schemas';
 
 export default defineConfig({
@@ -20,8 +21,13 @@ export default defineConfig({
         S.list()
           .title('Nội dung')
           .items([
-            S.listItem().title('San pham').schemaType('product').child(S.documentTypeList('product')),
+            S.listItem()
+              .title('Cài đặt Website & Liên hệ')
+              .schemaType('siteSettings')
+              .child(S.document().schemaType('siteSettings').documentId('siteSettings')),
+            S.divider(),
             S.listItem().title('Bai viet / Tin tuc').schemaType('post').child(S.documentTypeList('post')),
+            S.listItem().title('San pham').schemaType('product').child(S.documentTypeList('product')),
             S.divider(),
             S.listItem().title('Doi ngu').schemaType('teamMember').child(S.documentTypeList('teamMember')),
             S.listItem().title('Doi tac').schemaType('partner').child(S.documentTypeList('partner')),
@@ -31,6 +37,6 @@ export default defineConfig({
     visionTool(),
   ],
   schema: {
-    types: [productSchema, postSchema, teamMemberSchema, partnerSchema, certificationSchema],
+    types: [siteSettingsSchema, productSchema, postSchema, teamMemberSchema, partnerSchema, certificationSchema],
   },
 });

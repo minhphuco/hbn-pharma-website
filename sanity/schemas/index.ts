@@ -111,3 +111,24 @@ export const certificationSchema = defineType({
     select: { title: 'name', subtitle: 'issuedBy', media: 'image' },
   },
 });
+
+// ===== Site Settings Schema (Hotline, Địa chỉ, Email) =====
+export const siteSettingsSchema = defineType({
+  name: 'siteSettings',
+  title: 'Cài đặt Website & Thông tin liên hệ',
+  type: 'document',
+  fields: [
+    defineField({ name: 'hotline', title: 'Số điện thoại Hotline', type: 'string', initialValue: '028 3930 0000', validation: (r) => r.required() }),
+    defineField({ name: 'email', title: 'Email liên hệ', type: 'string', initialValue: 'contact@hbnpharma.com.vn' }),
+    defineField({ name: 'addressHcm', title: 'Địa chỉ TP.HCM (VI)', type: 'text', rows: 2, initialValue: '123 Nguyễn Thị Minh Khai, Phường 6, Quận 3, TP. Hồ Chí Minh' }),
+    defineField({ name: 'addressHcmEn', title: 'Address HCM (EN)', type: 'text', rows: 2, initialValue: '123 Nguyen Thi Minh Khai, Ward 6, District 3, Ho Chi Minh City' }),
+    defineField({ name: 'addressHn', title: 'Địa chỉ Hà Nội (VI)', type: 'text', rows: 2, initialValue: '456 Trần Duy Hưng, Phường Trung Hòa, Quận Cầu Giấy, Hà Nội' }),
+    defineField({ name: 'addressHnEn', title: 'Address Hanoi (EN)', type: 'text', rows: 2, initialValue: '456 Tran Duy Hung, Trung Hoa, Cau Giay, Hanoi' }),
+    defineField({ name: 'workingHours', title: 'Giờ làm việc', type: 'string', initialValue: 'Thứ Hai - Thứ Sáu: 08:00 - 17:30' }),
+    defineField({ name: 'facebookUrl', title: 'Đường dẫn Facebook', type: 'url' }),
+    defineField({ name: 'zaloPhone', title: 'Số Zalo liên hệ', type: 'string' }),
+  ],
+  preview: {
+    select: { title: 'hotline', subtitle: 'email' },
+  },
+});
